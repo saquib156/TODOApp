@@ -1,0 +1,108 @@
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+  font-family: sans-serif;
+}
+
+/* common style ends */
+
+/* container */
+.container {
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f6b4;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 35px;
+}
+
+/* todo-form */
+
+.todo-form {
+  margin: 30px 0px;
+}
+
+.todo-input {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-right: 15px;
+  font-size: 17px;
+}
+
+.add-button {
+  background-color: #4c4cee;
+  color: #fff;
+  width: 100px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #dc143c;
+}
+
+ul {
+  list-style-type: none; /* get rid of bullet points on side of list items */
+}
+
+/* todo-form style ends */
+
+/* todo-items */
+.todo-list {
+  min-width: 450px;
+}
+
+/* each li with class="item" */
+.item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.item:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+/* item style end */
+
+.delete-button {
+  background-color: #dc143c;
+  border: 1px solid #4c4cee;
+  color: #ffffff;;
+  outline: none;
+  margin-right: 15px;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.delete-button:hover {
+  background-color: #4c4cee;
+}
+
+/* todo-items style ends */
+
+/* container style ends */
