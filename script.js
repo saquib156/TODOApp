@@ -6,10 +6,18 @@ const saveBtn = document.querySelector(".add-button");
 
 let todoList = [];
 
+function getTodoItems(){
+  let Items = localStorage.getItem("data");
+  let todoList = JSON.parse(Items);
+  return todoList;
+}
+
 // set item to localStorage
 saveBtn.addEventListener("click", function(event){
   let item = inputVal.value;
   
+  let todoList = getTodoItems();
+
   const todoItem = {
     id: Date.now(),
     name: item
